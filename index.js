@@ -4,7 +4,7 @@ let myLeads = []
 const inputEl = document.getElementById("input-el")
 const ulEl = document.getElementById("ul-el")
 
-let listItems = ""
+
 inputBtn.addEventListener("click", function(){
     if (inputEl.value != ""){
     myLeads.push(inputEl.value)
@@ -15,7 +15,7 @@ inputBtn.addEventListener("click", function(){
     
 
 function renderLeads(){
-
+let listItems = ""                                                  // TEN GOGUŚ
 for ( let i = 0; i < myLeads.length; i++ ){
         //ulEl.textContent += myLeads[i]
         listItems += "<li>" + myLeads[i] + "</li>"
